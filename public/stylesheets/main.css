@@ -1,15 +1,7 @@
 @charset "utf-8";
 
-html {
-    font-size: 10px;
-}
-
 body {
-    font-size: 1.6rem;
-}
-
-.container {
-    margin-top: 6rem;
+    padding-top: 7.2rem;
 }
 
 /* 下面开发你的代码 */
