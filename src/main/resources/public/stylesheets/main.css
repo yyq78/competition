@@ -1,7 +1,51 @@
 @charset "utf-8";
 
 body {
-    padding-top: 7.2rem;
+    padding-top:45px;
+    background:url("../img/doodles.png") repeat;
 }
+nav{
+    background:seagreen;
+}
+.nav-item+.nav-item{
+    margin-left:30px;
+}
+.nav-item{
+    color:white;
+    font-size:16px;
+}
+.nav-link:hover{
+    color:white;
+}
+.container{
+    margin-top:30px;
+    margin-bottom:30px;
+    background-color:#cccccc;
+    padding:20px;
+
+}
+#poster{
+    height:500px;
+    border:1px solid silver;
+    background-image:url("../img/competition-poster.jpg");
+    background-size:100% 100%;
+}
+#footer{
+    padding:10px;
+    background-color:lightblue;
+}
+ul{
+    list-style-type: none;
+}
+.text{
+    text-indent: 2em;
+}
+.background-gray-dark{
+    background-color: #cccccc;
+}
+.background-light-blue{
+    background-color:lightblue;
+}
+
 
 /* 下面开发你的代码 */
