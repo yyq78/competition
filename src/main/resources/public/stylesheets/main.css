@@ -29,6 +29,7 @@ nav{
     border:1px solid silver;
     background-image:url("../img/competition-poster.jpg");
     background-size:100% 100%;
+    margin-top:20px;
 }
 #footer{
     padding:10px;
