@@ -425,7 +425,7 @@
                         <div class="form-group">
                             <p>参赛人员<small>（可自行组队，以1~3人为宜）</small></p>
                             <label class="radio-inline">
-                                <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required/>1人
+                                <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required checked/>1人
                             </label>
                             <label class="radio-inline">
                                 <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number" required/>2人
@@ -433,14 +433,14 @@
                             <label class="radio-inline">
                                 <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
                             </label>
-                        </div>
-                        <div class="form-group">
+                        </div><!--参赛人数单选框-->
+                        <div class="form-group" id="person1">
                             <label for="name1"  class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
                             <div id="major1">
                                 <p>专业</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-major" value="person1-物联网工程" required/>物联网工程
+                                    <input type="radio" name="options-1-major" value="person1-物联网工程" required checked/>物联网工程
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-1-major" value="person1-网络工程" required/>网络工程
@@ -453,29 +453,23 @@
                                 </label>
                             </div>
                             <div id="grade1">
+                                <p>年级</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大一" required>大一
+                                    <input type="radio" name="options-1-grade"  value="person1-大一" required checked>大一
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-1-grade"  value="person1-大二" required> 大二
                                 </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大三" required> 大三
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大四" required> 大四
-                                </label>
                             </div>
 
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <p>专业<small>（以姓名的填写顺序选择相对应的专业）</small></p>
-
+                        </div><!--person1-->
+                        <div class="form-group" id="person2">
+                            <label for="name2">姓名</label>
+                            <input type="text" name="name2" class="form-control" id="name2" placeholder="请输入姓名" required/>
+                            <p>专业</p>
                             <div id="major2">
-
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-major" value="person2-物联网工程" required/>物联网工程
+                                    <input type="radio" name="options-2-major" value="person2-物联网工程" required />物联网工程
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-major" value="person2-网络工程" required/>网络工程
@@ -487,26 +481,7 @@
                                     <input type="radio" name="options-2-major" value="person2-计算机科学与技术" required/>计算机科学与技术
                                 </label>
                             </div>
-                            <div id="major3">
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-major" value="person3-物联网工程" required/>物联网工程
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-major" value="person3-网络工程" required/>网络工程
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-major" value="person3-软件工程" required/>软件工程
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-major" value="person3-计算机科学与技术" required/>计算机科学与技术
-                                </label>
-                            </div>
-
-
-                        </div>
-                        <div class="form-group">
-                            <p>年级<small>(以姓名的填写顺序选择相对应的专业)</small></p>
-
+                            <p>年级</p>
                             <div id="grade2">
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
@@ -514,13 +489,29 @@
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-grade"  value="person2-大二" required> 大二
                                 </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-2-grade"  value="person2-大三" required> 大三
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-2-grade"  value="person2-大四" required> 大四
-                                </label>
                             </div>
+
+
+                        </div><!--person2-->
+                        <div class="form-group" id="person3">
+                            <label for="name3">姓名</label>
+                            <input type="text" class="form-control" id="name3" placeholder="请输入姓名" checked required/>
+                            <p>专业</p>
+                            <div id="major3">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="options-3-major" value="person2-物联网工程" required/>物联网工程
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="options-3-major" value="person2-网络工程" required/>网络工程
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="options-3-major" value="person2-软件工程" required/>软件工程
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="options-3-major" value="person2-计算机科学与技术" required/>计算机科学与技术
+                                    </label>
+                            </div>
+                            <p>年级</p>
                             <div id="grade3">
                                 <label class="radio-inline">
                                     <input type="radio" name="options-3-grade" id="options-grade1" value="person3-大一" required>大一
@@ -528,14 +519,8 @@
                                 <label class="radio-inline">
                                     <input type="radio" name="options-3-grade" id="options-grade2"  value="person3-大二" required> 大二
                                 </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-grade" id="options-grade3"  value="person3-大三" required> 大三
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-3-grade" id="options-grade4"  value="person3-大四" required> 大四
-                                </label>
                             </div>
-                        </div>
+                        </div><!--person3-->
                         <div class="form-group">
                             <div class="text-left">
                                 <label for="idea-name">创意名称</label>
