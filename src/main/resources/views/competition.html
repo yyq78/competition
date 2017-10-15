@@ -8,7 +8,9 @@
     <link rel="icon" type="image/x-icon" href="../../../../favicon.ico">
     <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../public/stylesheets/main.css">
-    <script src="jquery-3.2.1.slim.min.js"></script>
+    <!--<script src="jquery-3.2.1.slim.min.js"></script>-->
+    <script src="../public/lib/jquery-3.2.1.min.js"></script>
+    <script src="../public/lib/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- nav -->
@@ -432,16 +434,11 @@
                                 <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
                             </label>
                         </div>
-                        <div class="form-group" id="name-group">
+                        <div class="form-group">
                             <label for="name1"  class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
-                            <input type="text" class="form-control" id="name2" name="name" placeholder="请输入小组队员姓名" required/>
-                            <input type="text" class="form-control" id="name3" name="name" placeholder="请输入小组队员姓名" required/>
-
-                        </div>
-                        <div class="form-group">
-                            <p>专业<small>（以姓名的填写顺序选择相对应的专业）</small></p>
                             <div id="major1">
+                                <p>专业</p>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-1-major" value="person1-物联网工程" required/>物联网工程
                                 </label>
@@ -455,6 +452,26 @@
                                     <input type="radio" name="options-1-major" value="person1-计算机科学与技术" required/>计算机科学与技术
                                 </label>
                             </div>
+                            <div id="grade1">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-grade"  value="person1-大一" required>大一
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-grade"  value="person1-大二" required> 大二
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-grade"  value="person1-大三" required> 大三
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-grade"  value="person1-大四" required> 大四
+                                </label>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <p>专业<small>（以姓名的填写顺序选择相对应的专业）</small></p>
+
                             <div id="major2">
 
                                 <label class="radio-inline">
@@ -489,20 +506,7 @@
                         </div>
                         <div class="form-group">
                             <p>年级<small>(以姓名的填写顺序选择相对应的专业)</small></p>
-                            <div id="grade1">
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大一" required>大一
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大二" required> 大二
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大三" required> 大三
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大四" required> 大四
-                                </label>
-                            </div>
+
                             <div id="grade2">
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
@@ -554,34 +558,57 @@
     </div>
 </main>
 <!-- footer-->
-<div id="footer" class="container-fluid">
-    <div class="container background-light-blue">
+<div id="footer" class="container-fluid background-light-blue">
+    <div class="container">
+        <h3>翼灵物联工作室</h3>
+        <p class="lead">欢迎访问我们的各个站点</p>
+        <hr class="m-y-md">
         <div class="row">
-            <div>
-                &copy; <span>2017</span>
-                &hearts; <a href="#" target="_blank">翼灵物联工作室</a>
-                &hearts; <a href="#" target="_blank">yyq</a>
-            </div>
-            <div>
-                <b>翼灵物联工作室</b>
-                <ul>
-                    <li>翼灵官网</li>
-                    <li>培养方向</li>
-                    <li>创意大赛</li>
-                    <li>开源空间</li>
-                    <li>招新系统</li>
-                    <li>考试系统</li>
-                    <li>翼灵一家人</li>
-                </ul>
-            </div>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-official-48.png" alt="翼灵官网" class="website-item"/>
+                <p class="website-info">翼灵官网</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-major-48.png" alt="培养方向" class="website-item"/>
+                <p class="website-info">培养方向</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-competition-48.png" alt="创意大赛" class="website-item"/>
+                <p class="website-info">创意大赛</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-open-48.png" alt="开源空间" class="website-item"/>
+                <p class="website-info">开源空间</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-new-48.png" alt="招新系统" class="website-item"/>
+                <p class="website-info">招新系统</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-exam-48.png" alt="考试系统" class="website-item"/>
+                <p class="website-info">考试系统</p>
+            </a>
+            <a href="#" target="_blank" class="website-link text-center">
+                <img src="../public/img/nav-family-48.png" alt="翼灵一家人" class="website-item"/>
+                <p class="website-info">翼灵一家人</p>
+            </a>
         </div>
     </div>
-
+    <div class="container">
+        <hr class="m-y-md">
+        <p class="text-center">
+            &copy; 2017
+            <a href="#" target="_blank">翼灵物联工作室</a>
+            <a href="#" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </p>
+    </div>
 </div>
 
 
-<script src="../public/lib/jquery-3.2.1.min.js"></script>
-<script src="../public/lib/bootstrap.min.js"></script>
+
+
 <script src="../public/js/main.js"></script>
 </body>
 </html>
