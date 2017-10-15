@@ -3,6 +3,9 @@
 body {
     padding-top: 2rem;
 }
+nav{
+    background-color:lightseagreen;
+}
 .container{
     margin-top:25px;
     margin-bottom:30px;
@@ -41,4 +44,21 @@ label{
 .item{
     display:none;
 }
+.website-link {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 18px;
+}
+
+.website-item {
+    width: 36px;
+    height: 36px;
+}
+
+.website-info {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
 /* 下面开发你的代码 */
