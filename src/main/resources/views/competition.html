@@ -55,36 +55,6 @@
 </nav>
 <!--content-->
 <main>
-    <div class="container-fluid" id="poster">
-        <div id="myCarousel" class="carousel slide">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="../public/img/competition-poster.jpg" alt="First slide">
-                </div>
-                <div class="item">
-                    <img src="../public/img/l-competitors.jpg" alt="Second slide">
-                </div>
-                <div class="item">
-                    <img src="../public/img/l-workers.jpg" alt="Third slide">
-                </div>
-            </div>
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control left" href="#myCarousel"
-               data-slide="prev">&lsaquo;
-            </a>
-            <a class="carousel-control right" href="#myCarousel"
-               data-slide="next">&rsaquo;
-            </a>
-
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="jumbotron-fluid">
@@ -400,16 +370,16 @@
                     <h2>比赛流程</h2>
                     <hr class="m-y-md">
                     <dl>
-                        <dt><button class="btn btn-primary">1.组队</button></dt>
+                        <dt><span class="text-primary">1.组队</span></dt>
                         <dd>参赛人员自行组队以小组（1~3人）为单位
                             针对某一实际应用场景或物品，运用物联网相关思想，提出自己的创新或优化想法
                         </dd>
-                        <dt><button class="btn btn-success">2.报名</button></dt>
+                        <dt><span class="text-success">2.报名</span></dt>
                         <dd>报名时间为：2017年10月20日<br/>通过大赛网站进行报名并提交创意方案</dd>
 
-                        <dt><button class="btn btn-info">3.初选</button></dt>
+                        <dt><span class="text-info">3.初选</span></dt>
                         <dd>初赛采用线上竞赛,经评审委员会评审作品，择日公布初赛结果.</dd>
-                        <dt><button class="btn btn-warning">4.决赛</button></dt>
+                        <dt><span class="text-warning">4.决赛</span></dt>
                         <dd>总决赛采取集中竞赛的方式，在规定时间内进行创意答辩，评审委员会评选总决赛优胜团队颁发奖品证书。</dd>
                     </dl>
                 </div>
@@ -417,23 +387,26 @@
             </div>
         </div>
         <div class="row">
-            <div class="jumbotron">
+            <div class="jumbotron" id="table">
                 <div class="container">
                     <h2>报名参赛</h2>
                     <hr class="m-y-md">
                     <form action="" method="post" role="form">
-                        <div class="form-group">
-                            <p>参赛人员<small>（可自行组队，以1~3人为宜）</small></p>
-                            <label class="radio-inline">
-                                <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required checked/>1人
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number" required/>2人
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
-                            </label>
-                        </div><!--参赛人数单选框-->
+                        <div class="row">
+                            <div class="form-group">
+                                <p>参赛人员<small>（可自行组队，以1~3人为宜）</small></p>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required checked/>1人
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number" required/>2人
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
+                                </label>
+                            </div><!--参赛人数单选框-->
+                        </div>
+
                         <div class="row">
                         <div class="form-group col-md-4" id="person1">
                             <label for="name1"  class="control-label">姓名</label>
@@ -459,7 +432,7 @@
                                     <input type="radio" name="options-1-grade"  value="person1-大一" required checked>大一
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大二" required> 大二
+                                    <input type="radio" name="options-1-grade"  value="person1-大二" required>大二
                                 </label>
                             </div>
 
@@ -467,8 +440,9 @@
                         <div class="form-group col-md-4" id="person2">
                             <label for="name2" class="control-label">姓名</label>
                             <input type="text" name="name2" class="form-control" id="name2" placeholder="请输入姓名" required/>
-                            <label for="major2" class="control-label">专业</label>
+
                             <div id="major2">
+                                <p>专业</p>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-major" value="person2-物联网工程" required />物联网工程
                                 </label>
@@ -482,8 +456,8 @@
                                     <input type="radio" name="options-2-major" value="person2-计算机科学与技术" required/>计算机科学与技术
                                 </label>
                             </div>
-                            <label for="grade2" class="control-label">年级</label>
                             <div id="grade2">
+                                <p>年级</p>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
                                 </label>
@@ -497,8 +471,8 @@
                         <div class="form-group col-md-4" id="person3">
                             <label for="name3" class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name3" placeholder="请输入姓名" required/>
-                            <p>专业</p>
                             <div id="major3">
+                                    <p>专业</p>
                                     <label class="radio-inline">
                                         <input type="radio" name="options-3-major" value="person2-物联网工程" required/>物联网工程
                                     </label>
@@ -512,8 +486,9 @@
                                         <input type="radio" name="options-3-major" value="person2-计算机科学与技术" required/>计算机科学与技术
                                     </label>
                             </div>
-                            <p>年级</p>
+
                             <div id="grade3">
+                                <p>年级</p>
                                 <label class="radio-inline">
                                     <input type="radio" name="options-3-grade" id="options-grade1" value="person3-大一" required>大一
                                 </label>
@@ -523,18 +498,28 @@
                             </div>
                         </div><!--person3-->
                         </div>
-                        <div class="form-group">
-                            <div class="text-left">
-                                <label for="idea-name">创意名称</label>
-                                <input type="text" class="form-control" name="idea-name" id="idea-name"/>
-                                <label for="idea-description">创意描述(限300字以内)</label>
-                                <textarea class="form-control" rows="5"  maxlength="300" id="idea-description" name="idea-description" required></textarea>
-                                <label for="idea-market">应用前景(300字以内)</label>
-                                <textarea class="form-control" rows="5" id="idea-market" maxlength="300" name="idea-market" required></textarea>
+                        <div class="row">
+                            <div class="form-group col-md-12" id="idea">
+
+                                    <div>
+                                        <label for="idea-name">创意名称</label>
+                                        <input type="text" class="form-control" name="idea-name" id="idea-name"/></div>
+                                    <div>
+                                        <label for="idea-description">创意描述(限300字以内)</label>
+                                        <textarea class="form-control" rows="5"  maxlength="300" id="idea-description" name="idea-description" required></textarea></div>
+                                    <div>
+                                        <label for="idea-market">应用前景(300字以内)</label>
+                                        <textarea class="form-control" rows="5" id="idea-market" maxlength="300"
+                                                  name="idea-market" required></textarea>
+                                    </div>
+
+
+
                             </div>
                         </div>
+
                         <div class="text-right">
-                            <button type="submit" class="btn btn-success center-block">提交</button>
+                            <button type="submit" class="btn btn-success center-block" onclick="alert('恭喜您，报名成功！');">提交</button>
                         </div>
 
                     </form>
