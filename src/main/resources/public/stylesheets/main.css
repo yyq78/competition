@@ -18,6 +18,9 @@ nav{
 ul{
     list-style-type: none;
 }
+input[type='radio']{
+    margin-right:5px;
+}
 .text{
     text-indent: 2em;
 }
@@ -61,3 +64,12 @@ a{
 }
 
 /* 下面开发你的代码 */
+#major1,#major2,#major3{
+    margin-top:15px;
+}
+.form-group>div>p{
+    margin-bottom:5px;
+}
+#idea div{
+    margin-bottom:14px;
+}
