@@ -31,12 +31,11 @@ a{
     color:darkgoldenrod;
     font-size:14px;
 }
-#name2,#name3,#major2,#major3,#grade2,#grade3{
-    margin-top:10px;
+#person2,#person3{
     display:none;
 }
-label{
-    padding-right:40px;
+.radio-inline{
+    padding-right:35px;
 }
 .form-group{
     padding:10px;

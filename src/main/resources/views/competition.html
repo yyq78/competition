@@ -434,7 +434,8 @@
                                 <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
                             </label>
                         </div><!--参赛人数单选框-->
-                        <div class="form-group" id="person1">
+                        <div class="row">
+                        <div class="form-group col-md-4" id="person1">
                             <label for="name1"  class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
                             <div id="major1">
@@ -463,10 +464,10 @@
                             </div>
 
                         </div><!--person1-->
-                        <div class="form-group" id="person2">
-                            <label for="name2">姓名</label>
+                        <div class="form-group col-md-4" id="person2">
+                            <label for="name2" class="control-label">姓名</label>
                             <input type="text" name="name2" class="form-control" id="name2" placeholder="请输入姓名" required/>
-                            <p>专业</p>
+                            <label for="major2" class="control-label">专业</label>
                             <div id="major2">
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-major" value="person2-物联网工程" required />物联网工程
@@ -481,7 +482,7 @@
                                     <input type="radio" name="options-2-major" value="person2-计算机科学与技术" required/>计算机科学与技术
                                 </label>
                             </div>
-                            <p>年级</p>
+                            <label for="grade2" class="control-label">年级</label>
                             <div id="grade2">
                                 <label class="radio-inline">
                                     <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
@@ -493,9 +494,9 @@
 
 
                         </div><!--person2-->
-                        <div class="form-group" id="person3">
-                            <label for="name3">姓名</label>
-                            <input type="text" class="form-control" id="name3" placeholder="请输入姓名" checked required/>
+                        <div class="form-group col-md-4" id="person3">
+                            <label for="name3" class="control-label">姓名</label>
+                            <input type="text" class="form-control" id="name3" placeholder="请输入姓名" required/>
                             <p>专业</p>
                             <div id="major3">
                                     <label class="radio-inline">
@@ -521,6 +522,7 @@
                                 </label>
                             </div>
                         </div><!--person3-->
+                        </div>
                         <div class="form-group">
                             <div class="text-left">
                                 <label for="idea-name">创意名称</label>
