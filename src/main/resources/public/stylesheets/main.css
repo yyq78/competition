@@ -1,35 +1,12 @@
 @charset "utf-8";
 
 body {
-    padding-top:45px;
-    background:url("../img/doodles.png") repeat;
-}
-nav{
-    background:seagreen;
-}
-.nav-item+.nav-item{
-    margin-left:30px;
-}
-.nav-item{
-    color:white;
-    font-size:16px;
-}
-.nav-link:hover{
-    color:white;
+    padding-top: 2rem;
 }
 .container{
-    margin-top:30px;
+    margin-top:25px;
     margin-bottom:30px;
-    /*background-color:#cccccc;*/
-    padding:20px;
 
-}
-#poster{
-    height:500px;
-    border:1px solid silver;
-    background-image:url("../img/competition-poster.jpg");
-    background-size:100% 100%;
-    margin-top:20px;
 }
 #footer{
     padding:10px;
@@ -47,17 +24,21 @@ ul{
 .background-light-blue{
     background-color:lightblue;
 }
-
-.website-link {
-    display: inline-block;
+a{
+    color:darkgoldenrod;
+    font-size:14px;
 }
-
-.website-item {
-    border-radius: 100%;
-    width: 120px;
-    height: 120px;
-    margin: 40px;
+#name2,#name3,#major2,#major3,#grade2,#grade3{
+    margin-top:10px;
+    display:none;
 }
-
-
+label{
+    padding-right:40px;
+}
+.form-group{
+    padding:10px;
+}
+.item{
+    display:none;
+}
 /* 下面开发你的代码 */

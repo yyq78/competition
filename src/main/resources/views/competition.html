@@ -5,330 +5,582 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>物联网创意大赛 - 翼灵</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../../favicon.ico">
     <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../public/stylesheets/main.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
 </head>
 <body>
-    <!-- nav -->
-    <nav class="nav navbar navbar-inverse navbar-toggleable-md  fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <h1><a class="navbar-brand navbar-header" href="#">物联网创意大赛</a></h1>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav navbar-left">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">比赛简介<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">比赛日程</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">报名参赛</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">风采展示</a>
-                </li>
-                <li class="nav-item dropdown nav navbar-nav navbar-right">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于我们</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <span class="dropdown-header">翼灵物联工作室</span>
-                        <a class="dropdown-item" href="#">翼灵官网</a>
-                        <a class="dropdown-item" href="#">培养方向</a>
-                        <a class="dropdown-item" href="#">创意大赛</a>
-                        <a class="dropdown-item disabled" href="#">开源空间（暂不开放）</a>
-                        <a class="dropdown-item disabled" href="#">招新系统（非招新时间）</a>
-                        <a class="dropdown-item disabled" href="#">考试系统（系统更新中）</a>
-                        <a class="dropdown-item disabled" href="#">翼灵一家人（暂不开放）</a>
-                    </div>
-                </li>
-
-            </ul>
-
-
-
-
-
-        </div>
-    </nav>
-    <!--content-->
-    <main>
-        <div class="container-fluid" id="poster"></div>
-        <div class="jumbotron">
-            <div class="container">
-                <h2>物联网创意大赛 - 简介</h2>
-                <p class="lead">灵动物联，汇聚创新</p>
-                <hr class="m-y-md">
-                <p class="text">物联网创意大赛，以科技改变生活为主题，目的在于充分激发学生的想象力和创新意识，促使同学们结合对物联网的理解，
-                    针对（智慧地球、智能家居、智能医疗、智能农业、智慧校园、智慧交通、食品安全、安防犯罪）等领域，
-                    提出自己的创意想法或优化方案，旨在激发学生积极参与物联网知识学习与创新的热情，提升学生在物联网技术相关领域的应用和实践能力，
-                    推进物联网相关专业的教学内容和教学方法的改革与创新，促进高校物联网相关技术的研究和成果转化。
-                </p>
-            </div>
-        </div>
-        <div class="jumbotron">
-            <div class="container">
-                <h2>比赛流程</h2>
-                <p class="lead">灵动物联，汇聚创新</p>
-                <hr class="m-y-md">
-                <dl class="col-md-12">
-                    <dt><button class="btn btn-primary">组队</button></dt>
-                    <dd>参赛人员自行组队以小组（1~3人）为单位
-                        针对某一实际应用场景或物品，运用物联网相关思想，提出自己的创新或优化想法
-                    </dd>
-                    <dt><button class="btn btn-success">报名</button></dt>
-                    <dd>报名时间为：*年*月*日<br/>通过大赛网站：#进行报名并提交创意方案</dd>
-
-                    <dt><button class="btn btn-info">初选</button></dt>
-                    <dd>初赛采用线上竞赛,经评审委员会评审作品，择日公布初赛结果.</dd>
-                    <dt><button class="btn btn-warning">决赛</button></dt>
-                    <dd>总决赛采取集中竞赛的方式，在规定时间内进行创意答辩，评审委员会评选总决赛优胜团队颁发奖品证书。</dd>
-                </dl>
-            </div>
-        </div>
-        <div class="jumbotron">
-            <div class="container">
-                <h2>风采展示</h2>
-                <p class="lead">灵动物联，汇聚创新</p>
-                <hr class="m-y-md">
-                <div class="row">
-
-
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-p1.jpg">
-                            <div class="caption">
-                                <p>
-                                    <b>特等奖</b><br/>
-                                    <span>
-
-                                王俊沣<br/>
-                                通过智能手环提前检测癫痫发作时间<br/>
-                                </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-p2.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>一等奖</b><br/>
-                                    <span>
-
-                                葛芮琪 马思诺<br/>
-                                盲人及视力障碍患者可用的智能手环及智能耳机<br/>
-                                </span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-p3.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>二等奖</b><br />
-                                    <span>
-
-                                李浩杰：
-                                自动售饭机<br />
-
-                                苗栋：
-                                Super Doctor自动诊断机<br />
-                            </span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-p4.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>三等奖</b><br />
-                                    <span>
-
-                                王磊<br/>
-                                公交车乘客密度实时监测<br/><br />
-
-                                陈钇杉<br />
-                                机场塔台管制系统改良<br /><br />
-
-                                廖小瑶 吴思琪 邓梦涵<br />
-                                Magic mirror<br />
-                            </span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
+<!-- nav -->
+<nav class="nav navbar navbar-inverse navbar-toggleable-md  fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1><a class="navbar-brand navbar-header" href="#">物联网创意大赛</a></h1>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item">
+                <a class="nav-link" href="#">比赛简介<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">比赛日程</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">报名参赛</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">风采展示</a>
+            </li>
+            <li class="nav-item dropdown nav navbar-nav navbar-right">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于我们</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
+                    <span class="dropdown-header">翼灵物联工作室</span>
+                    <a class="dropdown-item" href="#">翼灵官网</a>
+                    <a class="dropdown-item" href="#">培养方向</a>
+                    <a class="dropdown-item" href="#">创意大赛</a>
+                    <a class="dropdown-item disabled" href="#">开源空间（暂不开放）</a>
+                    <a class="dropdown-item disabled" href="#">招新系统（非招新时间）</a>
+                    <a class="dropdown-item disabled" href="#">考试系统（系统更新中）</a>
+                    <a class="dropdown-item disabled" href="#">翼灵一家人（暂不开放）</a>
                 </div>
-                <div class="row">
+            </li>
 
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-p4.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>优胜奖</b><br/>
-                                    <span>
-                                张海洋 熊小预:
-                                智能书包<br/>
+        </ul>
 
-                                樊祖杨:
-                                全方位智能袜子<br />
 
-                                代娣 王芬:
-                                智能校园——让校园更智能<br />
 
-                                王智博 李超:
-                                基于局域网的手机物联控制<br />
-                            </span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-teacher.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>评委老师</b><br />
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-competitor.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>参赛选手</b><br />
-                                    <span>所有参赛选手的合影</span>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="../public/img/s-worker.jpg"
-                            >
-                            <div class="caption">
-                                <p>
-                                    <b>翼灵成员</b><br /><br />
-                                    <span>
-                                翼灵团队的所有成员和评委老师的合影
-                            </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
+    </div>
+</nav>
+<!--content-->
+<main>
+    <div class="container-fluid" id="poster">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../public/img/competition-poster.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="../public/img/l-competitors.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="../public/img/l-workers.jpg" alt="Third slide">
                 </div>
             </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;
+            </a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;
+            </a>
+
         </div>
-        <div class="jumbotron">
-            <div class="container">
-                <h2>报名参赛</h2>
-                <p class="lead">灵动物联，汇聚创新</p>
-                <hr class="m-y-md">
-                <form action="" method="post" role="form">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron-fluid">
+                <div class="container">
+                    <h2>物联网创意大赛 - 简介</h2>
+                    <p class="lead">灵动物联，汇聚创新</p>
+                    <hr class="m-y-md">
+                    <p class="text">物联网创意大赛，以科技改变生活为主题，目的在于充分激发学生的想象力和创新意识，促使同学们结合对物联网的理解，
+                        针对（智慧地球、智能家居、智能医疗、智能农业、智慧校园、智慧交通、食品安全、安防犯罪）等领域，
+                        提出自己的创意想法或优化方案，旨在激发学生积极参与物联网知识学习与创新的热情，提升学生在物联网技术相关领域的应用和实践能力，
+                        推进物联网相关专业的教学内容和教学方法的改革与创新，促进高校物联网相关技术的研究和成果转化。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="jumbotron-fluid">
+                <div class="container">
+                    <h2>风采展示</h2>
+                    <hr class="m-y-md">
+                    <div class="row">
+
+
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-p1.jpg">
+                                <div class="caption">
+
+                                    <!-- 按钮触发模态框 -->
+                                    <div><a data-toggle="modal" data-target="#myModal1" href="#">特等奖&nbsp;&nbsp;&nbsp;王俊沣：通过智能手环提前检测癫痫...</a></div>
+                                    <!-- 模态框（Modal） -->
+                                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal1Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal1Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>特等奖</b><br/>
+                                                        <span>
+						                                11号选手<br/>
+						                                王俊沣<br/>
+                                                            通过智能手环提前检测癫痫发作时间
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-p2.jpg"
+                                >
+                                <div class="caption">
+
+                                    <a data-toggle="modal" data-target="#myModal2" href="#">一等奖&nbsp;&nbsp;&nbsp;葛芮琪,马思诺:盲人及视力障碍患者可用的...</a>
+                                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal2Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal2Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>一等奖</b><br/>
+                                                        <span>
+                                                                葛芮琪 马思诺<br/>
+                                                            盲人及视力障碍患者可用的智能手环及智能耳机<br/>
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-p3.jpg"
+                                >
+                                <div class="caption">
+                                    <a  data-toggle="modal" data-target="#myModal3" href="#">二等奖&nbsp;&nbsp;&nbsp;李浩杰：自动售饭机。苗栋：...</a>
+                                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal3Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal3Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>二等奖</b><br/>
+                                                        <span>
+                                                                李浩杰： 自动售饭机<br/>
+                                                                苗栋： Super Doctor自动诊断机
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-p4.jpg"
+                                >
+                                <div class="caption">
+                                    <a data-toggle="modal" data-target="#myModal4" href="#">三等奖&nbsp;&nbsp;&nbsp;王磊：公交车乘客密度实时监测...</a>
+                                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal4Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>三等奖</b><br/>
+                                                        <span>
+                                                                王磊：公交车乘客密度实时监测<br/>
+                                                                陈钇杉：机场塔台管制系统改良<br/>
+                                                                廖小瑶 吴思琪 邓梦涵：Magic mirror
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-p4.jpg"
+                                >
+                                <div class="caption">
+                                    <a data-toggle="modal" data-target="#myModal5" href="#">优胜奖&nbsp;&nbsp;&nbsp; 张海洋、熊小预：智能书包</a>
+                                    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal5Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>优胜奖</b><br/>
+                                                        <span>
+                                                                张海洋 熊小预:智能书包<br/>
+                                                                樊祖杨:全方位智能袜子<br />
+                                                                代娣 王芬:智能校园——让校园更智能<br />
+                                                                王智博 李超:基于局域网的手机物联控制<br />
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-teacher.jpg"
+                                >
+                                <div class="caption">
+                                    <a data-toggle="modal" data-target="#myModal6" href="#">评委老师&nbsp;&nbsp;计算机科学学院：赵刚院长...</a>
+                                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal6Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>评委老师</b><br/>
+                                                        <span>
+                                                                计算机科学学院：赵刚院长
+                                                                成都道惟尔科技有限公司：郑晶翔经理<br />
+                                                                物联网工程教研室：周永老师、
+						                                        杨明根老师、周瑞东老师、梁宗文老师。
+
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-competitor.jpg"
+                                >
+                                <div class="caption">
+                                    <a data-toggle="modal" data-target="#myModal7" href="#">参赛选手</a>
+                                    <div class="modal fade" id="myModal7" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal7Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>参赛选手</b><br/>
+                                                        <span>
+                                                              所有参赛选手与评委老师的合影。
+
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../public/img/s-worker.jpg"
+                                >
+                                <div class="caption">
+                                    <a data-toggle="modal" data-target="#myModal8" href="#">翼灵成员</a>
+                                    <div class="modal fade" id="myModal8" tabindex="-1" role="dialog"
+                                         aria-labelledby="myModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModal8Label">物联网创意大赛</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        <b>翼灵成员</b><br/>
+                                                        <span>
+                                                             翼灵团队的所有成员和评委老师的合影。
+
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron-fluid">
+                <div class="container">
+                    <h2>比赛流程</h2>
+                    <hr class="m-y-md">
+                    <dl>
+                        <dt><button class="btn btn-primary">1.组队</button></dt>
+                        <dd>参赛人员自行组队以小组（1~3人）为单位
+                            针对某一实际应用场景或物品，运用物联网相关思想，提出自己的创新或优化想法
+                        </dd>
+                        <dt><button class="btn btn-success">2.报名</button></dt>
+                        <dd>报名时间为：2017年10月20日<br/>通过大赛网站进行报名并提交创意方案</dd>
+
+                        <dt><button class="btn btn-info">3.初选</button></dt>
+                        <dd>初赛采用线上竞赛,经评审委员会评审作品，择日公布初赛结果.</dd>
+                        <dt><button class="btn btn-warning">4.决赛</button></dt>
+                        <dd>总决赛采取集中竞赛的方式，在规定时间内进行创意答辩，评审委员会评选总决赛优胜团队颁发奖品证书。</dd>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron">
+                <div class="container">
+                    <h2>报名参赛</h2>
+                    <hr class="m-y-md">
+                    <form action="" method="post" role="form">
                         <div class="form-group">
-                            <label for="name" class="control-label">姓名</label>
-                            <input type="text" class="form-control" id="name" placeholder="请输入名字">
+                            <p>参赛人员<small>（可自行组队，以1~3人为宜）</small></p>
+                            <label class="radio-inline">
+                                <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required/>1人
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number" required/>2人
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
+                            </label>
+                        </div>
+                        <div class="form-group" id="name-group">
+                            <label for="name1"  class="control-label">姓名</label>
+                            <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
+                            <input type="text" class="form-control" id="name2" name="name" placeholder="请输入小组队员姓名" required/>
+                            <input type="text" class="form-control" id="name3" name="name" placeholder="请输入小组队员姓名" required/>
+
                         </div>
                         <div class="form-group">
-                            <label for="major" class="control-label">专业</label>
-                            <input type="text" class="form-control" id="major" placeholder="请输入专业">
+                            <p>专业<small>（以姓名的填写顺序选择相对应的专业）</small></p>
+                            <div id="major1">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-major" value="person1-物联网工程" required/>物联网工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-major" value="person1-网络工程" required/>网络工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-major" value="person1-软件工程" required/>软件工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-1-major" value="person1-计算机科学与技术" required/>计算机科学与技术
+                                </label>
+                            </div>
+                            <div id="major2">
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-major" value="person2-物联网工程" required/>物联网工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-major" value="person2-网络工程" required/>网络工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-major" value="person2-软件工程" required/>软件工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-major" value="person2-计算机科学与技术" required/>计算机科学与技术
+                                </label>
+                            </div>
+                            <div id="major3">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-major" value="person3-物联网工程" required/>物联网工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-major" value="person3-网络工程" required/>网络工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-major" value="person3-软件工程" required/>软件工程
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-major" value="person3-计算机科学与技术" required/>计算机科学与技术
+                                </label>
+                            </div>
+
+
                         </div>
                         <div class="form-group">
-                            <p>年级</p>
-                            <div>
+                            <p>年级<small>(以姓名的填写顺序选择相对应的专业)</small></p>
+                            <div id="grade1">
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-grade" id="optionsRadios1" value="大一" checked>大一
+                                    <input type="radio" name="options-1-grade"  value="person1-大一" required>大一
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-grade" id="optionsRadios2"  value="大二"> 大二
+                                    <input type="radio" name="options-1-grade"  value="person1-大二" required> 大二
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-grade" id="optionsRadios3"  value="大三"> 大三
+                                    <input type="radio" name="options-1-grade"  value="person1-大三" required> 大三
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-grade" id="optionsRadios4"  value="大四"> 大四
+                                    <input type="radio" name="options-1-grade"  value="person1-大四" required> 大四
+                                </label>
+                            </div>
+                            <div id="grade2">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-grade"  value="person2-大二" required> 大二
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-grade"  value="person2-大三" required> 大三
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-2-grade"  value="person2-大四" required> 大四
+                                </label>
+                            </div>
+                            <div id="grade3">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-grade" id="options-grade1" value="person3-大一" required>大一
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-grade" id="options-grade2"  value="person3-大二" required> 大二
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-grade" id="options-grade3"  value="person3-大三" required> 大三
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="options-3-grade" id="options-grade4"  value="person3-大四" required> 大四
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="text-left">
-                                <button class="btn btn-info">下载报名表</button>
-                                <label for="file">上传报名表<input type="file" id="file"/></label>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-success center-block">提交</button>
+                                <label for="idea-name">创意名称</label>
+                                <input type="text" class="form-control" name="idea-name" id="idea-name"/>
+                                <label for="idea-description">创意描述(限300字以内)</label>
+                                <textarea class="form-control" rows="5"  maxlength="300" id="idea-description" name="idea-description" required></textarea>
+                                <label for="idea-market">应用前景(300字以内)</label>
+                                <textarea class="form-control" rows="5" id="idea-market" maxlength="300" name="idea-market" required></textarea>
                             </div>
                         </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success center-block">提交</button>
+                        </div>
+
                     </form>
+                </div>
+
             </div>
         </div>
-    </main>
-    <!-- footer-->
-    <div id="footer" class="container-fluid background-light-blue">
-        <div class="container">
-            <h3>翼灵物联工作室</h3>
-            <p class="lead">欢迎访问我们的各个站点</p>
-            <hr class="m-y-md">
-            <div class="row">
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
-                <a href="#" target="_blank" class="website-link col-md-3 text-center">
-                    <img src="http://dummyimage.com/150x150/4d494d/686a82.gif&text=placeholder+image" alt="翼灵官网" class="website-item"/>
-                </a>
+    </div>
+</main>
+<!-- footer-->
+<div id="footer" class="container-fluid">
+    <div class="container background-light-blue">
+        <div class="row">
+            <div>
+                &copy; <span>2017</span>
+                &hearts; <a href="#" target="_blank">翼灵物联工作室</a>
+                &hearts; <a href="#" target="_blank">yyq</a>
             </div>
-        </div>
-        <div class="container">
-            <h3>联系我们</h3>
-            <hr class="m-y-md">
-            <address>
-                <p class="lead">地址: <span class="small">西南石油大学·明理楼C·1011</span></p>
-                <p class="lead">官方QQ: <span class="small">3465459890</span></p>
-                <p class="lead">GitHub: <span class="small"><a href="https://github.com/YiLing-IOT-Studio/" target="_blank">YiLing-IOT-Studio</a> </span></p>
-            </address>
+            <div>
+                <b>翼灵物联工作室</b>
+                <ul>
+                    <li>翼灵官网</li>
+                    <li>培养方向</li>
+                    <li>创意大赛</li>
+                    <li>开源空间</li>
+                    <li>招新系统</li>
+                    <li>考试系统</li>
+                    <li>翼灵一家人</li>
+                </ul>
+            </div>
         </div>
     </div>
 
+</div>
 
 <script src="../public/lib/jquery-3.2.1.min.js"></script>
 <script src="../public/lib/bootstrap.min.js"></script>
+<script src="../public/js/main.js"></script>
 </body>
 </html>
