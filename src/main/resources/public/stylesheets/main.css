@@ -18,6 +18,9 @@ nav{
 ul{
     list-style-type: none;
 }
+input[type='radio']{
+    margin-right:5px;
+}
 .text{
     text-indent: 2em;
 }
@@ -31,12 +34,11 @@ a{
     color:darkgoldenrod;
     font-size:14px;
 }
-#name2,#name3,#major2,#major3,#grade2,#grade3{
-    margin-top:10px;
+#person2,#person3{
     display:none;
 }
-label{
-    padding-right:40px;
+.radio-inline{
+    padding-right:35px;
 }
 .form-group{
     padding:10px;
@@ -62,3 +64,12 @@ label{
 }
 
 /* 下面开发你的代码 */
+#major1,#major2,#major3{
+    margin-top:15px;
+}
+.form-group>div>p{
+    margin-bottom:5px;
+}
+#idea div{
+    margin-bottom:14px;
+}

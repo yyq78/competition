@@ -3,30 +3,18 @@ $(document).ready(function(){
         var $selectedValue=$("input[name='options-number']:checked").val();
         if($selectedValue==1)
         {
-            $("#name2").hide();
-            $("#name3").hide();
-            $("#major2").hide();
-            $("#major3").hide();
-            $("#grade2").hide();
-            $("#grade3").hide();
+            $("#person2").hide();
+            $("#person3").hide();
         }
         if($selectedValue==2)
         {
-            $("#name2").show();
-            $("#name3").hide();
-            $("#major2").show();
-            $("#major3").hide();
-            $("#grade2").show();
-            $("#grade3").hide();
+            $("#person2").show();
+            $("#person3").hide();
         }
         if($selectedValue==3)
         {
-            $("#name2").show();
-            $("#name3").show();
-            $("#major2").show();
-            $("#major3").show();
-            $("#grade2").show();
-            $("#grade3").show();
+            $("#person2").show();
+            $("#person3").show();
         }
     });
 });
