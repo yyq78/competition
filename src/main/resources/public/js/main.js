@@ -22,7 +22,6 @@ $(document).ready(function(){
             $("#person3").show();
             $("fieldset #person2").attr("disabled",false);
             $("fieldset #person3").attr("disabled",false);
-
         }
     });
 });
