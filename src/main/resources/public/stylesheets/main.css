@@ -11,6 +11,9 @@ nav{
     margin-bottom:30px;
 
 }
+main {
+    padding-top: 60px;
+}
 #footer{
     padding:10px;
     background-color:lightblue;
@@ -45,8 +48,8 @@ a{
 }
 .website-link {
     display: inline-block;
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     margin: 18px;
 }
 
