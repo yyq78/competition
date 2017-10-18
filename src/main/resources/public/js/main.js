@@ -17,7 +17,6 @@ $(document).ready(function(){
         }
         if($selectedValue==3)
         {
-
             $("#person2").show();
             $("#person3").show();
             $("fieldset #person2").attr("disabled",false);
