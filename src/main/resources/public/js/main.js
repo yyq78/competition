@@ -3,24 +3,20 @@ $(document).ready(function(){
         var $selectedValue=$("input[name='options-number']:checked").val();
         if($selectedValue==1)
         {
-            $("fieldset #person2").attr("disabled",true);
-            $("fieldset #person3").attr("disabled",true);
-            $("#person2").hide();
-            $("#person3").hide();
+            $("#person2").attr("disabled",true);
+            $("#person3").attr("disabled",true);
+
         }
         if($selectedValue==2)
         {
-            $("fieldset #person2").attr("disabled",false);
-            $("fieldset #person3").attr("disabled",true);
-            $("#person2").show();
-            $("#person3").hide();
+            $("#person2").attr("disabled",false);
+            $("#person3").attr("disabled",true);
+
         }
         if($selectedValue==3)
         {
-            $("#person2").show();
-            $("#person3").show();
-            $("fieldset #person2").attr("disabled",false);
-            $("fieldset #person3").attr("disabled",false);
+            $("#person2").attr("disabled",false);
+            $("#person3").attr("disabled",false);
         }
     });
 });
