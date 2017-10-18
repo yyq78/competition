@@ -375,7 +375,7 @@
                             针对某一实际应用场景或物品，运用物联网相关思想，提出自己的创新或优化想法
                         </dd>
                         <dt><span class="text-success">2.报名</span></dt>
-                        <dd>报名时间为：2017年10月20日<br/>通过大赛网站进行报名并提交创意方案</dd>
+                        <dd>报名时间为：2017年10月21日--2017年10月30日<br/>通过大赛网站进行报名并提交创意方案</dd>
 
                         <dt><span class="text-info">3.初选</span></dt>
                         <dd>初赛采用线上竞赛,经评审委员会评审作品，择日公布初赛结果.</dd>
@@ -407,7 +407,7 @@
                             </div><!--参赛人数单选框-->
                         </div>
                         <div class="row">
-                        <div class="form-group col-md-4" id="person1">
+                        <fieldset class="form-group col-md-4" id="person1">
                             <label for="name1"  class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
                             <div id="major1">
@@ -435,8 +435,8 @@
                                 </label>
                             </div>
 
-                        </div><!--person1-->
-                        <div class="form-group col-md-4" id="person2">
+                        </fieldset><!--person1-->
+                        <fieldset class="form-group col-md-4" id="person2" disabled>
                             <label for="name2" class="control-label">姓名</label>
                             <input type="text" name="name2" class="form-control" id="name2" placeholder="请输入姓名" required/>
 
@@ -466,8 +466,8 @@
                             </div>
 
 
-                        </div><!--person2-->
-                        <div class="form-group col-md-4" id="person3">
+                        </fieldset><!--person2-->
+                        <fieldset class="form-group col-md-4" id="person3" disabled>
                             <label for="name3" class="control-label">姓名</label>
                             <input type="text" class="form-control" id="name3" placeholder="请输入姓名" required/>
                             <div id="major3">
@@ -495,14 +495,14 @@
                                     <input type="radio" name="options-3-grade" id="options-grade2"  value="person3-大二" required> 大二
                                 </label>
                             </div>
-                        </div><!--person3-->
+                        </fieldset><!--person3-->
                         </div>
                         <div class="row">
-                            <div class="form-group col-md-12" id="idea">
+                            <fieldset class="form-group col-md-12" id="idea">
 
                                     <div>
                                         <label for="idea-name">创意名称
-                                        <input type="text" class="form-control" name="idea-name" id="idea-name"/></label>
+                                        <input type="text" class="form-control" name="idea-name" id="idea-name" required/></label>
                                     </div>
                                     <div>
                                         <label for="idea-description">创意描述(限300字以内)</label>
@@ -516,7 +516,7 @@
 
 
 
-                            </div>
+                            </fieldset>
                         </div>
 
                         <div class="text-right">
