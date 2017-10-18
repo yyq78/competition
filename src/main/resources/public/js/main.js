@@ -5,13 +5,11 @@ $(document).ready(function(){
         {
             $("#person2").attr("disabled",true);
             $("#person3").attr("disabled",true);
-
         }
         if($selectedValue==2)
         {
             $("#person2").attr("disabled",false);
             $("#person3").attr("disabled",true);
-
         }
         if($selectedValue==3)
         {
