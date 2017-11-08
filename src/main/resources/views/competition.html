@@ -8,9 +8,9 @@
     <link rel="icon" type="image/x-icon" href="../../../../favicon.ico">
     <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../public/stylesheets/main.css">
-    <!--<script src="jquery-3.2.1.slim.min.js"></script>-->
     <script src="../public/lib/jquery-3.2.1.min.js"></script>
     <script src="../public/lib/bootstrap.min.js"></script>
+
 </head>
 <body>
 <!-- nav -->
@@ -55,7 +55,9 @@
 </nav>
 <!--content-->
 <main>
+
     <div class="container">
+
         <div class="row">
             <div class="jumbotron-fluid">
                 <div class="container">
@@ -71,7 +73,6 @@
             </div>
 
         </div>
-
         <div class="row">
             <div class="jumbotron-fluid">
                 <div class="container">
@@ -85,9 +86,9 @@
                                 <img src="../public/img/s-p1.jpg">
                                 <div class="caption">
 
-                                    <!-- 按钮触发模态框 -->
+
                                     <div><a data-toggle="modal" data-target="#myModal1" href="#">特等奖&nbsp;&nbsp;&nbsp;王俊沣：通过智能手环提前检测癫痫...</a></div>
-                                    <!-- 模态框（Modal） -->
+
                                     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
                                          aria-labelledby="myModal1Label" aria-hidden="true">
                                         <div class="modal-dialog">
@@ -110,8 +111,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -144,8 +145,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,8 +178,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -212,8 +213,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -250,8 +251,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -286,8 +287,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                                                 </div>
 
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -319,8 +320,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -352,8 +353,8 @@
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
                                                 </div>
-                                            </div><!-- /.modal-content -->
-                                        </div><!-- /.modal -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -386,140 +387,164 @@
 
             </div>
         </div>
+
         <div class="row">
             <div class="jumbotron" id="table">
                 <div class="container">
                     <h2 id="sign">报名参赛</h2>
                     <hr class="m-y-md">
-                    <form action="" method="post" role="form">
+                    <form action="" method="post" onsubmit="return validate()">
+                        <!--比赛人数开始-->
                         <div class="row">
                             <div class="form-group">
                                 <p>参赛人员<small>（可自行组队，以1~3人为宜）</small></p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" required checked/>1人
+                                    <input type="radio" name="options-number" id="options-number1" value="1" class="choose-number" checked/>1人
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number" required/>2人
+                                    <input type="radio" name="options-number" id="options-number2" value="2" class="choose-number"/>2人
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number" required/>3人
+                                    <input type="radio" name="options-number" id="options-number3" value="3" class="choose-number"/>3人
                                 </label>
-                            </div><!--参赛人数单选框-->
+                            </div>
                         </div>
+                        <!--比赛人数结束-->
+                        <!--队员开始-->
                         <div class="row">
+                            <!--person1开始-->
                         <fieldset class="form-group col-md-4" id="person1">
-                            <label for="name1"  class="control-label">姓名</label>
-                            <input type="text" class="form-control" id="name1" name="name" placeholder="请输入你的姓名" required/>
+                            <label>
+                                姓名<input type="text" class="form-control" id="stu_name1" name="name1"/>
+                            </label>
+                            <p id="name1_warning"><i class="fa fa-exclamation-triangle"></i>姓名格式不正确</p>
+                            <label>
+                                学号<input type="text" class="form-control" id="stu_id1" name="id1"/>
+                            </label>
+                            <p id="id1_warning"><i class="fa fa-exclamation-triangle"></i>学号格式不正确</p>
                             <div id="major1">
                                 <p>专业</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-major" value="person1-物联网工程" required checked/>物联网工程
+                                    <input type="radio" name="options-1-major" value="person1-物联网工程" checked/>物联网工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-major" value="person1-网络工程" required/>网络工程
+                                    <input type="radio" name="options-1-major" value="person1-网络工程" />网络工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-major" value="person1-软件工程" required/>软件工程
+                                    <input type="radio" name="options-1-major" value="person1-软件工程" />软件工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-major" value="person1-计算机科学与技术" required/>计算机科学与技术
+                                    <input type="radio" name="options-1-major" value="person1-计算机科学与技术" />计算机科学与技术
                                 </label>
                             </div>
                             <div id="grade1">
                                 <p>年级</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大一" required checked>大一
+                                    <input type="radio" name="options-1-grade"  value="person1-大一"  checked>大一
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-1-grade"  value="person1-大二" required>大二
+                                    <input type="radio" name="options-1-grade"  value="person1-大二" >大二
                                 </label>
                             </div>
-                        </fieldset><!--person1-->
-                        <fieldset class="form-group col-md-4" id="person2" disabled="true">
-                            <label for="name2" class="control-label">姓名</label>
-                            <input type="text" name="name2" class="form-control" id="name2" placeholder="请输入姓名" required/>
-
+                        </fieldset>
+                            <!--person1结束-->
+                            <!--person2开始-->
+                        <fieldset class="form-group col-md-4" id="person2">
+                            <label>姓名
+                            <input type="text" name="name2" class="form-control " id="stu_name2"/></label>
+                            <p id="name2_warning"><i class="fa fa-exclamation-triangle"></i>姓名格式不正确或重复</p>
+                            <label>学号
+                                <input type="text" name="name2" class="form-control" id="stu_id2"/>
+                            </label>
+                            <p id="id2_warning"><i class="fa fa-exclamation-triangle"></i>学号格式不正确或重复</p>
                             <div id="major2">
                                 <p>专业</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-major" value="person2-物联网工程" required />物联网工程
+                                    <input type="radio" name="options-2-major" value="person2-物联网工程" checked/>物联网工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-major" value="person2-网络工程" required/>网络工程
+                                    <input type="radio" name="options-2-major" value="person2-网络工程"  />网络工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-major" value="person2-软件工程" required/>软件工程
+                                    <input type="radio" name="options-2-major" value="person2-软件工程"  />软件工程
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-major" value="person2-计算机科学与技术" required/>计算机科学与技术
+                                    <input type="radio" name="options-2-major" value="person2-计算机科学与技术" />计算机科学与技术
                                 </label>
                             </div>
                             <div id="grade2">
                                 <p>年级</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-grade"  value="person2-大一" required>大一
+                                    <input type="radio" name="options-2-grade"  value="person2-大一"  checked>大一
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-2-grade"  value="person2-大二" required> 大二
+                                    <input type="radio" name="options-2-grade"  value="person2-大二" > 大二
                                 </label>
                             </div>
-
-
-                        </fieldset><!--person2-->
-                        <fieldset class="form-group col-md-4" id="person3" disabled>
-                            <label for="name3" class="control-label">姓名</label>
-                            <input type="text" class="form-control" id="name3" placeholder="请输入姓名" required/>
+                        </fieldset>
+                            <!--person2结束-->
+                            <!--person3开始-->
+                        <fieldset class="form-group col-md-4" id="person3" >
+                            <label>姓名
+                            <input type="text" class="form-control stu-name" id="stu_name3"/></label>
+                            <p id="name3_warning"><i class="fa fa-exclamation-triangle"></i>姓名格式不正确或重复</p>
+                            <label>学号
+                                <input type="text" class="form-control stu-number " id="stu_id3"  />
+                            </label>
+                            <p id="id3_warning"><i class="fa fa-exclamation-triangle"></i>学号格式不正确或重复</p>
                             <div id="major3">
                                     <p>专业</p>
                                     <label class="radio-inline">
-                                        <input type="radio" name="options-3-major" value="person2-物联网工程" required/>物联网工程
+                                        <input type="radio" name="options-3-major" value="person2-物联网工程" checked/>物联网工程
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" name="options-3-major" value="person2-网络工程" required/>网络工程
+                                        <input type="radio" name="options-3-major" value="person2-网络工程"/>网络工程
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" name="options-3-major" value="person2-软件工程" required/>软件工程
+                                        <input type="radio" name="options-3-major" value="person2-软件工程" />软件工程
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" name="options-3-major" value="person2-计算机科学与技术" required/>计算机科学与技术
+                                        <input type="radio" name="options-3-major" value="person2-计算机科学与技术"/>计算机科学与技术
                                     </label>
                             </div>
-
                             <div id="grade3">
                                 <p>年级</p>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-3-grade" id="options-grade1" value="person3-大一" required>大一
+                                    <input type="radio" name="options-3-grade" id="options-grade1" value="person3-大一" checked>大一
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="options-3-grade" id="options-grade2"  value="person3-大二" required> 大二
+                                    <input type="radio" name="options-3-grade" id="options-grade2"  value="person3-大二" > 大二
                                 </label>
                             </div>
-                        </fieldset><!--person3-->
+                        </fieldset>
+                            <!--person3结束-->
                         </div>
+                        <!--队员结束-->
+                        <!--创意开始-->
                         <div class="row">
                             <fieldset class="form-group col-md-12" id="idea">
 
-                                    <div>
-                                        <label for="idea-name">创意名称
+                                    <!--<div>
+                                        <label>创意名称
                                         <input type="text" class="form-control" name="idea-name" id="idea-name" required/></label>
+                                    </div>-->
+                                    <div>
+                                        <label for="things1">创意描述(限300字以内)</label>
+                                        <textarea class="form-control" rows="5"  id="things1" name="idea-description"></textarea>
                                     </div>
                                     <div>
-                                        <label for="idea-description">创意描述(限300字以内)</label>
-                                        <textarea class="form-control" rows="5"  maxlength="300" id="idea-description" name="idea-description" required></textarea>
-                                    </div>
-                                    <div>
-                                        <label for="idea-market">应用前景(300字以内)</label>
-                                        <textarea class="form-control" rows="5" id="idea-market" maxlength="300"
-                                                  name="idea-market" required></textarea>
+                                        <label for="things2">应用前景(300字以内)</label>
+                                        <textarea class="form-control" rows="5" id="things2" name="idea-market" ></textarea>
                                     </div>
 
 
 
                             </fieldset>
                         </div>
+                        <!--创意结束-->
 
                         <div class="text-right">
-                            <button type="submit" class="btn btn-success center-block" onclick="alert('恭喜您，报名成功！')">提交</button>
+                            <button type="submit" class="btn btn-success center-block" id="bt">提交</button>
                         </div>
 
 
@@ -531,6 +556,7 @@
     </div>
 </main>
 <!-- footer-->
+
 <div id="footer" class="container-fluid background-light-blue">
     <div class="container">
         <h3>翼灵物联工作室</h3>
@@ -578,9 +604,6 @@
         </p>
     </div>
 </div>
-
-
-
 
 <script src="../public/js/main.js"></script>
 </body>

@@ -65,11 +65,17 @@ a{
 
 /* 下面开发你的代码 */
 #major1,#major2,#major3{
-    margin-top:15px;
+    margin-top:4px;
 }
 .form-group>div>p{
     margin-bottom:5px;
 }
 #idea div{
     margin-bottom:14px;
+}
+
+#name1_warning,#name2_warning,#name3_warning,#id1_warning,#id2_warning,#id3_warning{
+    display:none;
+    font-size:14px;
+    color:red;
 }
