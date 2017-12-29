@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+    background-color: rgb(40, 178, 185);
+}
+.title{
+    text-align:center;
+    color:seashell;
+
+}
+.lead{
+    text-align:center;
+    color: rgb(40, 178, 185);
+}
+.container{
+    margin-top:100px;
+}
+.content{
+    width:600px;
+    margin:10px auto;
+    padding:40px;
+    border-radius:8px;
+    background-color:seashell;
+}
+fieldset{
+    padding:20px;
+    margin:8px;
+}
+label{
+    display:block;
+    padding:2px;
+}
+input[type="text"]{
+    margin-left:5px;
+    width:250px;
+    height:25px;
+    border:1px solid lightgray;
+    border-radius:4px;
+}
+a{
+    text-decoration:none;
+}
+.agile_info{
+    position:relative;
+}
+input[type="file"]{
+    position: absolute;
+    top: 0;
+    left: 23%;
+    padding: 8px 5px;
+    opacity: 0;
+    cursor: pointer;
+}
+#file_drag{
+    font-weight: 600;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0 0 25px;
+    color: #146eb4;
+    border: 2px dashed #146eb4;
+    border-radius: 0;
+    cursor: default;
+    font-size: 20px;
+}
+#messages {
+    padding: 15px 10px;
+    margin: 15px 0;
+    border: 1px solid #ff9900;
+    color:#ff9900;
+}
+#download_place{
+    position:relative;
+    height:50px;
+    margin-top:8px;
+}
+.download_text{
+    position:absolute;
+    top:10px;
+    left:0;
+    font-weight:bold;
+}
+#submit_btn{
+    position:absolute;
+    top:0;
+    right:0;
+    display:inline;
+    width: 20%;
+    background: #ff9900;
+    border: none;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: 0.5s all; /* Safari */
+    transition:  0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition:0.5s all;
+}
+#submit_btn:hover {
+    background: #146eb4;
+}
+#messages p{
+    text-align:center;
+    color:#ff9900;
+}
+/*checkbox*/
+.submit label {
+    font-size: 0.9em;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    font-weight: 600;
+}
+label.submit_text {
+    margin-top: 0.8em;
+}
+input.checkbox {
+    background: #146eb4;
+    cursor: pointer;
+    width: 1em;
+    height: 1.2em;
+}
+input.checkbox:before {
+    content: "";
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    background: inherit;
+    cursor: pointer;
+}
+input.checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 1.2em;
+    border: 1px solid #fff;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .5rem;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #c0c0c0;
+    border-left-color: #c0c0c0;
+}
+.submit_text span {
+    padding-left: .5em;
+    vertical-align: top;
+}
+.submit_button{
+    position:relative;
+    padding:8px;
+}
+#download_btn{
+    position:absolute;
+    top:0;
+    right:0;
+    width:20%;
+    background:#146eb4;
+    border: none;
+    color:#fff;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#download_btn:hover{
+    opacity:0.8;
+}
+.warning{
+    display:none;
+    color:red;
+}
+
