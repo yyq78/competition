@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#articles">风采展示</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="报名表单.html" target="_blank">报名参赛</a>
+                <a class="nav-link" href="#enter" target="_blank">报名参赛</a>
             </li>
             <li class="nav-item dropdown nav navbar-nav navbar-right">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于我们</a>
@@ -61,7 +61,7 @@
             <div class="hero-text">
                 <p>运用你对物联网所了解，提出自己的创意想法、优化方案，改变生活</p>
             </div>
-                <a href="报名表单.html" target="_blank" class="btn-access">立即报名</a>
+                <a href="#enter" class="btn-access">立即报名</a>
             <div class='mouse-container'>
                 <a href="#intro">
                     <div class='mouse'>
@@ -76,7 +76,8 @@
         </div>
     </header>
     <!--大赛简介-->
-    <section id="intro" class="has-padding">
+    <div id="intro" class="has-padding">
+    <section >
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -111,70 +112,14 @@
 
         </div>
     </section>
-    <!--大赛流程-->
-    <section id="progress" class="gray">
-            <div class="container has-padding-tall">
-                <div class="container ">
-                    <div class="row">
-                        <h2 class="h2 progress-h2">
-                            <span>参赛流程</span>
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 ">
-                            <img src="../public/img/progress.jpg" class="progress-img"/>
-                        </div>
-                        <div class="col-md-4">
-
-                            <p class="progress-text">
-                                参赛人员自行组队，以小组（1~3人）为单位，针对某一实际应用场景或物品，运用物联网相关思想，提出自己的创新或优化想法.
-                                在学院通知的报名截止时期前，通过大赛网站进行报名并提交创意方案。创意大赛初赛采用线上竞赛,经评审委员会评审作品，择日公布初赛结果.
-                                初赛前会对选手进行培训，总决赛采取集中竞赛的方式，在规定时间内进行创意答辩，评审委员会评选总决赛优胜团队颁发奖品证书。
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-        <section id="stats" class="container-fluid gray">
-            <div class="stats has-padding-tall">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 stats-container">
-                            <i class="icon icon-Cup"></i>
-                            <div class="stats-wrapper">
-                                <p class="stats-number" data-stop="200">200</p>
-                                <p class="stats-text">提交作品</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 stats-container">
-                            <i class="icon icon-Book"></i>
-                            <div class="stats-wrapper">
-                                <p class="stats-number" data-stop="341">265</p>
-                                <p class="stats-text">参与观众</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 stats-container">
-                            <i class="icon icon-Pen"></i>
-                            <div class="stats-wrapper">
-                                <p class="stats-number" data-stop="43">22</p>
-                                <p class="stats-text">获奖数目</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!--section:articles-->
-    <section id="articles">
+    </div>
+    <!--风采展示-->
+    <div id="articles">
+    <section >
         <div class="container has-padding-tall">
             <div class="row">
                 <h2 class="h2 collection-h2">
-                    <span>荣誉展示</span>
+                    <span>风采展示</span>
                 </h2>
             </div>
             <div class="row">
@@ -186,7 +131,7 @@
                         <div class="caption">
 
 
-                            <div><a data-toggle="modal" data-target="#myModal1" href="#">特等奖&nbsp;&nbsp;&nbsp;余文轩：SAFEWALKING（智能拐杖）...</a></div>
+                            <div><a data-toggle="modal" data-target="#myModal1" href="#"><span class="prize-text">特等奖</span>&nbsp;&nbsp;&nbsp;<span class="work-text">SAFE WALKING（智能拐杖）</span></a></div>
 
                             <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal1Label" aria-hidden="true">
@@ -200,9 +145,8 @@
                                             <p>
                                                 <b>特等奖</b><br/>
                                                 <span>
-						                                8号选手<br/>
 						                                余文轩<br/>
-                                                          SAFEWALKING（智能拐杖）
+                                                          SAFE WALKING（智能拐杖）
                                                         </span>
                                             </p>
                                         </div>
@@ -222,7 +166,7 @@
                         >
                         <div class="caption">
 
-                            <a data-toggle="modal" data-target="#myModal2" href="#">一等奖&nbsp;&nbsp;&nbsp;黄泰名 高博宇 邹佳良：智能药箱...</a>
+                            <a data-toggle="modal" data-target="#myModal2" href="#"><span class="prize-text">一等奖</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="work-text">智能药箱</span></a>
                             <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal2Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -235,7 +179,7 @@
                                             <p>
                                                 <b>一等奖</b><br/>
                                                 <span>
-                                                                黄泰名 高博宇 邹佳良<br/>
+                                                            黄泰名 高博宇 邹佳良<br/>
                                                             智能药箱<br/>
                                                             </span>
                                             </p>
@@ -255,7 +199,7 @@
                         <img src="../public/img/二等奖.JPG"
                         >
                         <div class="caption">
-                            <a  data-toggle="modal" data-target="#myModal3" href="#">二等奖&nbsp;&nbsp;&nbsp;。：...</a>
+                            <a  data-toggle="modal" data-target="#myModal3" href="#"><span class="prize-text">二等奖</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="work-text">智能指环|智能扶梯</span></a>
                             <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal3Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -268,9 +212,12 @@
                                             <p>
                                                 <b>二等奖</b><br/>
                                                 <span>
-                                                                <br/>
+                                                    阳甫军 杨康 余柳  <br/>
+                                                    基于NFC的数字校园通行物品——智能指环<br/>
+                                                    卢姚 王婷<br/>
+                                                    智能扶梯<br/>
 
-                                                            </span>
+                                                </span>
                                             </p>
                                         </div>
                                         <div class="modal-footer">
@@ -290,7 +237,7 @@
                         <img src="../public/img/三等奖.JPG"
                         >
                         <div class="caption">
-                            <a data-toggle="modal" data-target="#myModal5" href="#">优胜奖&nbsp;&nbsp;&nbsp; 张海洋、熊小预：智能书包</a>
+                            <a data-toggle="modal" data-target="#myModal5" href="#"><span class="prize-text">三等奖</span><span class="work-text">智能健康贴|智能座椅|智能车牌</span></a>
                             <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal4Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -303,10 +250,9 @@
                                             <p>
                                                 <b>优胜奖</b><br/>
                                                 <span>
-                                                                张海洋 熊小预:智能书包<br/>
-                                                                樊祖杨:全方位智能袜子<br />
-                                                                代娣 王芬:智能校园——让校园更智能<br />
-                                                                王智博 李超:基于局域网的手机物联控制<br />
+                                                                曹敏：智能健康贴<br/>
+                                                                梁君远：智能座椅<br />
+                                                                王梓鑫：智能车牌<br />
                                                             </span>
                                             </p>
                                         </div>
@@ -325,7 +271,7 @@
                         <img src="../public/img/优胜奖.JPG"
                         >
                         <div class="caption">
-                            <a data-toggle="modal" data-target="#myModal6" href="#">评委老师&nbsp;&nbsp;计算机科学学院：赵刚院长...</a>
+                            <a data-toggle="modal" data-target="#myModal6" href="#"><span class="prize-text">优胜奖</span><span class="work-text">smart宠儿|共享书籍|校园自行车智能管理系统|贴心智能帽</span></a>
                             <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal4Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -336,12 +282,12 @@
                                         </div>
                                         <div class="modal-body">
                                             <p>
-                                                <b>评委老师</b><br/>
+                                                <b>优胜奖</b><br/>
                                                 <span>
-                                                                计算机科学学院：赵刚院长
-                                                                成都道惟尔科技有限公司：郑晶翔经理<br />
-                                                                物联网工程教研室：周永老师、
-						                                        杨明根老师、周瑞东老师、梁宗文老师。
+                                                             陈冀川：smart宠儿
+                                                             杨高 罗杰 周瑜泷：共享书籍<br />
+                                                             代天琪 王宇翔：校园自行车智能管理系统<br/>
+						                                     孙玥祺 陈玙璠 肖雅琼：贴心智能帽<br/>
 
                                                             </span>
                                             </p>
@@ -361,7 +307,7 @@
                         <img src="../public/img/全体人员合影.JPG"
                         >
                         <div class="caption">
-                            <a data-toggle="modal" data-target="#myModal7" href="#">参赛选手</a>
+                            <a data-toggle="modal" data-target="#myModal7" href="#"><span class="together prize-text">创意大赛全体人员合影</span><span class="work-text">全体参赛队员、评委老师、及工作人员赛后合影</span></a>
                             <div class="modal fade" id="myModal7" tabindex="-1" role="dialog"
                                  aria-labelledby="myModal4Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -372,7 +318,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <p>
-                                                <b>参赛选手</b><br/>
+                                                <b>全体合影</b><br/>
                                                 <span>
                                                               所有参赛选手与评委老师的合影。
 
@@ -393,16 +339,39 @@
             </div>
         </div>
     </section>
-    <section class="get-started has-padding text-center" id="get-started">
+    </div>
+    <!--报名参赛-->
+    <div id="enter" class="get-started text-center" >
+    <section>
         <div class="container">
+            <form>
+            <div class="row download-box">
+                <h2 class="h2">
+                    <span>报名参赛</span>
+                </h2>
+                <div id="download_place">
+                    <a href="#"  class="btn-download">下载报名表</a>
+                </div>
+
+
+            </div>
+
             <div class="row">
-                <div class="col-md-12 wp4">
-                    <h2>现在就开始吧，立即报名</h2>
-                    <a href="报名表单.html" class="btn secondary-white" target="_blank">Get started</a>
+                <div class="col-md-12">
+                    <div class="add-box">
+                        <input type="file"/>
+                    </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="submit-box">
+                    <a href="#" id="submit" class="btn-submit">提交</a>
+                </div>
+            </div>
+            </form>
         </div>
     </section>
+    </div>
 </main>
 <!-- footer-->
 <div id="footer" class="container-fluid background-light-blue">

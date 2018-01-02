@@ -30,7 +30,8 @@ body {
 /*footer*/
 #footer{
     padding:10px;
-    background-color:lightblue;
+    background-image: -webkit-linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
+    background-image: linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
 }
 .website-link {
     display: inline-block;
@@ -188,33 +189,9 @@ body {
     font-size:16px;
     line-height:28px;
 }
-/*stats*/
-.stats{
-    background:url("../img/stats-bg.jpg") no-repeat center center;
-    background-size:cover;
-}
+
 .has-padding-tall{
     padding:100px 0;
-}
-.stats .stats-container{
-    text-align:center;
-    border-right:1px solid #fff;
-}
-.stats .stats-wrapper {
-    display: inline-block;
-}
-.stats p.stats-number {
-    font-family: Montserrat, Georgia, "Times New Roman", serif;
-    font-size: 48px;
-    color:#fff;
-}
-.stats p.stats-text {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: .7;
-    padding: 0;
-    text-transform: uppercase;
-    color:#fff;
 }
 .progress-img{
     width:80%;
@@ -236,59 +213,89 @@ body {
     color:black;
     font-weight:lighter;
     text-decoration:none;
-
 }
 .caption{
     padding:10px;
 }
-section.get-started {
-    position: relative;
-
-    padding: 90px 0;
-
-    background-image: -webkit-linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
-    background-image: linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
-    margin-bottom: 0;
+/*prize-text*/
+.prize-text{
+    border-radius:4px;
+    display:inline-block;
+    width:53px;
+    height:24px;
+    background-color: #2aabd2;
+    color:seashell;
 }
-section.get-started h2
-{
-    font-size: 28px;
-
-    display: inline-block;
-
-    margin-right: 30px;
-
-    vertical-align: middle;
-
-    color: white;
+/*work-text*/
+.work-text{
+display:block;
 }
-section.get-started a {
-    font-weight: bold;
-
-    margin-bottom: 5px;
-
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-
-    color: white;
-    border: solid 2px rgb(225,225,225);
+.together{
+    width:166px;
 }
-section.get-started:hover
- {
-     border-bottom-color: rgba(225,225,225, 1);
- }
-section.get-started:before
- {
-     position: absolute;
-     top: 0;
-     left: 0;
+.download-box{
+    position:relative;
+    width:100%;
+}
+#download_place{
+    position:absolute;
+    top:20px;
+    right:0;
+}
+.btn-download{
 
-     width: 100%;
-     height: 100%;
+    width:160px;
+    height:60px;
+    text-decoration:none;
+    color:white;
+    border-radius:4px;
+    background:darkblue;
+    padding:15px 30px;
 
-     content: ' ';
+}
+.btn-download:hover{
+    opacity:0.7;
+    text-decoration:none;
+    color:white;
+    background:darkblue;
+}
+/*add-box*/
+.add-box{
+    margin-bottom:20px;
+    border:2px dashed goldenrod;
+    height:200px;
+    position:relative;
+}
 
-     background-image: url('../img/texture-shapes-bg.png');
- }
+input[type="file"]{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.submit-box{
+    position:relative;
+    width:100%;
+    height:100px;
+}
+.btn-submit{
+    width:160px;
+    height:60px;
+    border-radius:4px;
+    border:2px solid lightseagreen;
+    padding:15px;
+    color:lightseagreen;
+    position:absolute;
+    top:0;
+    right:16px;
+
+}
+.btn-submit:hover{
+    opacity:0.9;
+    text-decoration:none;
+    color:white;
+    background-color:lightseagreen;
+}
+
 
 
