@@ -93,12 +93,7 @@
                         推进物联网相关专业的教学内容和教学方法的改革与创新，促进高校物联网相关技术的研究和成果转化。
                     </p>
                     <div class="video-player">
-                        <video class="video-js vjs-default-skin vjs-big-play-centered" preload="auto" width="568" height="300" poster="../public/img/video-cover.jpg" controls="controls" data-setup="{}">
-                            <source src="../public/video/video.mp4" type="video/mp4" />
-                            <source src="../public/video/video2.ogg" type="video/ogg" />
-                            <source src="../public/video/video3.webm" type="video/webm" />
-                            <p>Your browser does not support the video tag.</p>
-                        </video>
+                        <embed src='http://player.youku.com/player.php/sid/XMzI1ODMwNzc0NA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
                     </div>
                     <div>
                         <p class="intro-text">大赛由翼灵物联网工作室承办，目前已举办多届，初赛通过线上提交创意进行，
@@ -127,7 +122,7 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/特等奖.JPG">
+                        <img src="../public/img/special.jpg">
                         <div class="caption">
 
 
@@ -162,7 +157,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/一等奖.JPG"
+                        <img src="../public/img/one.jpg"
                         >
                         <div class="caption">
 
@@ -196,7 +191,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/二等奖.JPG"
+                        <img src="../public/img/two.jpg"
                         >
                         <div class="caption">
                             <a  data-toggle="modal" data-target="#myModal3" href="#"><span class="prize-text">二等奖</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="work-text">智能指环|智能扶梯</span></a>
@@ -234,7 +229,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/三等奖.JPG"
+                        <img src="../public/img/three.jpg"
                         >
                         <div class="caption">
                             <a data-toggle="modal" data-target="#myModal5" href="#"><span class="prize-text">三等奖</span><span class="work-text">智能健康贴|智能座椅|智能车牌</span></a>
@@ -268,7 +263,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/优胜奖.JPG"
+                        <img src="../public/img/nice.jpg"
                         >
                         <div class="caption">
                             <a data-toggle="modal" data-target="#myModal6" href="#"><span class="prize-text">优胜奖</span><span class="work-text">smart宠儿|共享书籍|校园自行车智能管理系统|贴心智能帽</span></a>
@@ -304,7 +299,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="../public/img/全体人员合影.JPG"
+                        <img src="../public/img/all.jpg"
                         >
                         <div class="caption">
                             <a data-toggle="modal" data-target="#myModal7" href="#"><span class="together prize-text">创意大赛全体人员合影</span><span class="work-text">全体参赛队员、评委老师、及工作人员赛后合影</span></a>
@@ -343,31 +338,35 @@
     <!--报名参赛-->
     <div id="enter" class="get-started text-center" >
     <section>
-        <div class="container">
-            <form>
-            <div class="row download-box">
-                <h2 class="h2">
-                    <span>报名参赛</span>
-                </h2>
-                <div id="download_place">
-                    <a href="#"  class="btn-download">下载报名表</a>
+        <div class="container has-padding">
+            <form action="" method="post" enctype="multipart/form-data" onsubmit="return validate()">
+                <div class="row download-box">
+                    <h2 class="h2">
+                        <span>报名参赛</span>
+                    </h2>
+                    <div id="download_place">
+                        <a href="#"  class="btn-download">
+                            <span class="download-symbol"><img src="../public/img/arrow_up.png"/></span>
+                            <span class="download-text">下载报名表</span>
+                            <span class="btn-slide-icon"></span>
+                        </a>
+                    </div>
+
+
                 </div>
 
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="add-box">
-                        <input type="file"/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="add-box">
+                            <input type="file" id="file"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="submit-box">
-                    <a href="#" id="submit" class="btn-submit">提交</a>
+                <div class="row">
+                    <div class="submit-box">
+                        <input type="submit" name="submit" value="提交" id="submit" class="btn-submit"/>
+                    </div>
                 </div>
-            </div>
             </form>
         </div>
     </section>
@@ -421,6 +420,6 @@
         </p>
     </div>
 </div>
-
+<script src="../public/js/entry_form.js"></script>
 </body>
 </html>
